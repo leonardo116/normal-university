@@ -60,3 +60,4 @@ Version: '5.7.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Comm
 2019-08-15T06:26:42.910486Z 6 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
 2019-08-15T06:26:42.910885Z 6 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
 2019-08-15T06:26:42.910916Z 6 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2019-08-15T07:16:38.531495Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 106495ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
