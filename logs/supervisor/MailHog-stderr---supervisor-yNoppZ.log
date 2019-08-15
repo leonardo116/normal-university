@@ -65,3 +65,75 @@ https://wordpress.org/
 2019/08/15 06:26:48 [SMTP 127.0.0.1:36876] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
 2019/08/15 06:26:48 [SMTP 127.0.0.1:36876] Sent 9 bytes: '221 Bye\r\n'
 2019/08/15 06:26:48 [SMTP 127.0.0.1:36876] Session ended
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Starting session
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Received 16 bytes: 'EHLO localhost\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: ESTABLISH] In ESTABLISH state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Received 35 bytes: 'MAIL FROM:<www-data@339f8564a0e7>\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@339f8564a0e7>
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@339f8564a0e7>'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: MAIL] In MAIL state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 37 bytes: '250 Sender www-data@339f8564a0e7 ok\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: RCPT] In RCPT state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: RCPT] Got RCPT command
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Received 6 bytes: 'DATA\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: RCPT] Processing line: DATA
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: RCPT] In RCPT state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Received 1024 bytes: 'To: torlakvalerii116@gmail.com\r\nSubject: [normal university] Your Site is Experiencing a Technical Issue\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Thu, 15 Aug 2019 09:30:44 +0000\r\nFrom: WordPress <wordpress@normal-university.local>\r\nMessage-ID: <41b15835623ad5bc7bf00b7ed90123ff@normal-university.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nHowdy!\r\n\r\nSince WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email.\r\n\r\nIn this case, WordPress caught an error with your theme, Normal University.\r\n\r\nFirst, visit your website (http://normal-university.local/) and check for any visible issues. Next, visit the page where the error was caught (http://normal-university.local/wp-admin/admin-ajax.php) and check for any visible issues.\r\n\r\nPlease contact your host for assistance with investigating this issue further.\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Received 736 bytes: '\r\nIf your site appears broken and you can't access your dashboard normally, WordPress now has a special "recovery mode". This lets you safely login to your dashboard and investigate further.\r\n\r\nhttp://normal-university.local/wp-login.php?action=enter_recovery_mode&rm_token=9IX9woDLffTVdw8LmJmi94&rm_key=CbsGPpH9N61WKOzhRh3KKB\r\n\r\nTo keep your site safe, this link will expire in 1 day. Don't worry about that, though: a new link will be emailed to you if the error occurs again after it expires.\r\n\r\n\r\n\r\nError Details\r\n=============\r\nAn error of type E_PARSE was caused in line 4 of the file /app/public/wp-content/themes/normal-university-theme/functions.php. Error message: syntax error, unexpected 'wp_enqueue_style' (T_STRING)\r\n\r\n.\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/08/15 09:30:44 Parsing Content from string: 'To: torlakvalerii116@gmail.com
+Subject: [normal university] Your Site is Experiencing a Technical Issue
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Thu, 15 Aug 2019 09:30:44 +0000
+From: WordPress <wordpress@normal-university.local>
+Message-ID: <41b15835623ad5bc7bf00b7ed90123ff@normal-university.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Howdy!
+
+Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email.
+
+In this case, WordPress caught an error with your theme, Normal University.
+
+First, visit your website (http://normal-university.local/) and check for any visible issues. Next, visit the page where the error was caught (http://normal-university.local/wp-admin/admin-ajax.php) and check for any visible issues.
+
+Please contact your host for assistance with investigating this issue further.
+
+If your site appears broken and you can't access your dashboard normally, WordPress now has a special "recovery mode". This lets you safely login to your dashboard and investigate further.
+
+http://normal-university.local/wp-login.php?action=enter_recovery_mode&rm_token=9IX9woDLffTVdw8LmJmi94&rm_key=CbsGPpH9N61WKOzhRh3KKB
+
+To keep your site safe, this link will expire in 1 day. Don't worry about that, though: a new link will be emailed to you if the error occurs again after it expires.
+
+
+
+Error Details
+=============
+An error of type E_PARSE was caused in line 4 of the file /app/public/wp-content/themes/normal-university-theme/functions.php. Error message: syntax error, unexpected 'wp_enqueue_style' (T_STRING)
+'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Storing message y3zIs7T8JSGXmEu54jEKQk8dF2eccSOo1aGxjUWVCSE=@mailhog.example
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 80 bytes: '250 Ok: queued as y3zIs7T8JSGXmEu54jEKQk8dF2eccSOo1aGxjUWVCSE=@mailhog.example\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Received 6 bytes: 'QUIT\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: MAIL] Processing line: QUIT
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Sent 9 bytes: '221 Bye\r\n'
+2019/08/15 09:30:44 [SMTP 127.0.0.1:40698] Session ended
